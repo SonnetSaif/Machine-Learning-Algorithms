@@ -21,8 +21,8 @@ df = pd.read_csv("FuelConsumption.csv")
 # Spliting the dataset into train and test sets, 80% of the entire data for training, and the 20% for testing.
 # Creating a mask to select random rows using np.random.rand() function
 msk = np.random.rand(len(df)) < 0.8
-train = cdf[msk]
-test = cdf[~msk]
+train = df[msk]
+test = df[~msk]
 
 
 # Training Data Distribution
